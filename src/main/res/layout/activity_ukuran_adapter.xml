@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/coklat1"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/txtIdUkuran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/emas" />
+
+        <TextView
+            android:id="@+id/txtNamaUkuran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/emas" />
+
+        <TextView
+            android:id="@+id/txtCreatedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/emas" />
+
+        <TextView
+            android:id="@+id/txtUpdatedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/emas" />
+
+        <TextView
+            android:id="@+id/txtDeletedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/emas" />
+
+        <TextView
+            android:id="@+id/txtIdPegawaiLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/emas" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUbah"
+                android:layout_width="80dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/emas"
+                android:fontFamily="serif-monospace"
+                android:text="Ubah"
+                android:textColor="@color/coklat1"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnHapus"
+                android:layout_width="80dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/emas"
+                android:fontFamily="serif-monospace"
+                android:text="Hapus"
+                android:textColor="@color/coklat1"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

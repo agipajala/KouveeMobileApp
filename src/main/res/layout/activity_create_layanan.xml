@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ADE9"
+    tools:context=".Activity.Layanan.createLayanan">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtJenisLayanan"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:textColorHint="@color/White"
+        android:textSize="16sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Layanan"
+            android:textColor="@color/White"
+            android:textColorHighlight="@color/White"
+            android:textColorHint="@color/White" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtHargaLayanan"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="180dp"
+        android:textColorHint="@color/White"
+        android:textSize="16sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Layanan"
+            android:textColor="@color/White"
+            android:textColorHighlight="@color/White"
+            android:textColorHint="@color/White" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtIdUkuran"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:textColorHint="@color/White"
+        android:textSize="16sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Ukuran"
+            android:textColor="@color/White"
+            android:textColorHighlight="@color/White"
+            android:textColorHint="@color/White" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+
+        android:id="@+id/btnSimpan"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/White"
+        android:drawableLeft="@drawable/ic_save"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="10dp"
+        android:text="Simpan  "
+        android:textAlignment="center"
+        android:textColor="#00ADE9"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>

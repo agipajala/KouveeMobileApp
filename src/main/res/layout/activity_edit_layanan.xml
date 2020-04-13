@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context=".Activity.Layanan.editLayanan">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtJenisLayanan"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="16sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Layanan"
+            android:textColor="@android:color/holo_blue_light"
+            android:textColorHighlight="@android:color/holo_blue_light"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtHargaLayanan"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="16sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/holo_blue_light"
+            android:textColorHighlight="@android:color/holo_blue_light"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtIdUkuran"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="16sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Id Ukuran"
+            android:inputType="number"
+            android:textColor="@android:color/holo_blue_light"
+            android:textColorHighlight="@android:color/holo_blue_light"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:drawableLeft="@drawable/ic_save"
+            android:drawableTint="#FFFFFF"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="15dp"
+            android:text="Simpan"
+            android:textColor="@color/White"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="293dp"
+            tools:layout_editor_absoluteY="654dp" />
+
+    </LinearLayout>
+</LinearLayout>

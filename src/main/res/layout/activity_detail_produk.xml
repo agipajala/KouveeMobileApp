@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context=".Activity.Produk.detailProduk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#00ADE9"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/roundedbutton"
+            android:padding="3dp">
+
+            <com.zolad.zoominimageview.ZoomInImageView
+                android:id="@+id/dataGambarProduk"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="3dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedbutton"
+                android:scaleType="centerCrop"
+                android:scrollbarStyle="insideOverlay"
+                app:srcCompat="@drawable/noimage"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="112dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dataIDProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/boogaloo"
+                android:text="IdProduk"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="195dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <TextView
+                android:id="@+id/txtNamaUkuran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/boogaloo"
+                android:text="namaProduk"
+                android:textColor="@color/White"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="195dp"
+                tools:layout_editor_absoluteY="229dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/acme"
+            android:text="Harga                        "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <TextView
+            android:id="@+id/txtHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/acme"
+            android:text="DATA"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/acme"
+            android:text="Stok                            "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="337dp" />
+
+        <TextView
+            android:id="@+id/txtStok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:text="DATA"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/acme"
+            android:text="Jumlah Minimal   "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+        <TextView
+            android:id="@+id/txtJumlahMinimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:text="DATA"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/acme"
+            android:text="Dibuat pada           "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="415dp" />
+
+        <TextView
+            android:id="@+id/dataDibuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:text="DATA"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/acme"
+            android:text="Diedit Pada            "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+        <TextView
+            android:id="@+id/dataDiedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:text="DATA"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/acme"
+            android:text="Dihapus Pada        "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="497dp" />
+
+        <TextView
+            android:id="@+id/dataDihapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:text="DATA"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/acme"
+            android:text="NIP Log             "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="540dp" />
+
+        <TextView
+            android:id="@+id/dataNIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:text="DATA"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUbah"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:drawableLeft="@drawable/icon_edit"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:text="Ubah"
+                android:textColor="@color/White"
+                android:textColorHint="@color/emas"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="293dp"
+                tools:layout_editor_absoluteY="654dp" />
+
+            <Button
+                android:id="@+id/btnRestore"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:drawableLeft="@drawable/icon_restore"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:text="Pulihkan"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textColorHint="@color/emas"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="293dp"
+                tools:layout_editor_absoluteY="654dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnHapusSoft"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignWithParentIfMissing="false"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:drawableLeft="@drawable/icon_delete_sweep"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:text="Hapus"
+                android:textColor="@color/White"
+                android:textColorHint="@color/emas"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="195dp"
+                tools:layout_editor_absoluteY="654dp" />
+
+            <Button
+                android:id="@+id/btnHapusPermanen"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignWithParentIfMissing="false"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:drawableLeft="@drawable/icon_delete_permanen"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:text="Hapus"
+                android:textColor="@color/White"
+                android:textColorHint="@color/emas"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="195dp"
+                tools:layout_editor_absoluteY="654dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
